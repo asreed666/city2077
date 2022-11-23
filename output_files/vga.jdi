@@ -1,0 +1,17 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="39700192bed1365f10ec"/>
+  </project>
+  <file_info>
+    <file device="10M50DAF484C6GES" path="vga.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0" name="qsys_u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME hello_adc HAS_SOPCINFO 1 GENERATION_ID 1668506451"/>
+        <assignment_value text="QSYS_NAME hello_adc HAS_SOPCINFO 1 GENERATION_ID 1669205553"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

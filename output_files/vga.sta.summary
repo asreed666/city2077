@@ -1,0 +1,161 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -16.708
+TNS   : -628.981
+
+Type  : Slow 1200mV 85C Model Setup 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : -6.882
+TNS   : -507.894
+
+Type  : Slow 1200mV 85C Model Setup 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 36.410
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 0.567
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 37.665
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 0.707
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : -1.222
+TNS   : -108.758
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.777
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.524
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 19.753
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[0]'
+Slack : 93.699
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -14.758
+TNS   : -524.209
+
+Type  : Slow 1200mV 0C Model Setup 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : -6.204
+TNS   : -455.803
+
+Type  : Slow 1200mV 0C Model Setup 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 36.618
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 37.781
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 0.583
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : -1.222
+TNS   : -108.758
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.784
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.544
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 19.651
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[0]'
+Slack : 93.703
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -8.017
+TNS   : -305.237
+
+Type  : Fast 1200mV 0C Model Setup 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : -2.964
+TNS   : -206.331
+
+Type  : Fast 1200mV 0C Model Setup 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 38.115
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 38.706
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA:VGA_DISP|SYNC:C1|VSYNC'
+Slack : -1.000
+TNS   : -89.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.530
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_DISP|C|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.579
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[1]'
+Slack : 19.720
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_DISP|C1|paddlePositions|qsys_u0|altpll|sd1|pll7|clk[0]'
+Slack : 94.227
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,126 @@
+Restore Archived Project report for vga
+Wed Nov 23 12:04:10 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Nov 23 12:04:10 2022 ;
+; Revision Name                   ; vga                                   ;
+; Top-level Entity Name           ; DE10_LITE_Golden_Top                  ;
+; Family                          ; MAX 10                                ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored '/home/asr/Documents/GitHub/pong/vga.qar' into the '/home/asr/Documents/GitHub/city2077/' directory
+Info: Generated report 'vga.restore.rpt'
+Info (23030): Evaluation of Tcl script /home/asr/intelFPGA_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 579 megabytes
+    Info: Processing ended: Wed Nov 23 12:04:10 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++---------------------------------------------------------------------------------+
+; Files Restored                                                                  ;
++---------------------------------------------------------------------------------+
+; File Name                                                                       ;
++---------------------------------------------------------------------------------+
+; VGA.vhd                                                                         ;
+; char2std.vhd                                                                    ;
+; charrom.cmp                                                                     ;
+; charrom.qip                                                                     ;
+; charrom.v                                                                       ;
+; charrom_bb.v                                                                    ;
+; dispmem.cmp                                                                     ;
+; dispmem.qip                                                                     ;
+; dispmem.v                                                                       ;
+; dispmem_bb.v                                                                    ;
+; dispmem_inst.v                                                                  ;
+; font18x12.hex                                                                   ;
+; fpga/src/paddle.vhd                                                             ;
+; pcgsprite.vhd                                                                   ;
+; pcgsprite2.vhd                                                                  ;
+; pll.cmp                                                                         ;
+; pll.ppf                                                                         ;
+; pll.qip                                                                         ;
+; pll.v                                                                           ;
+; pll_bb.v                                                                        ;
+; quadrature_decoder.vhd                                                          ;
+; quartus/DE10LiteClockAssignments.sdc                                            ;
+; quartus/DE10LitePins.tcl                                                        ;
+; quartus/hello_adc.qsys                                                          ;
+; quartus/hello_adc.sopcinfo                                                      ;
+; quartus/hello_adc/hello_adc.cmp                                                 ;
+; quartus/hello_adc/synthesis/hello_adc.debuginfo                                 ;
+; quartus/hello_adc/synthesis/hello_adc.qip                                       ;
+; quartus/hello_adc/synthesis/hello_adc.v                                         ;
+; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.sdc           ;
+; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v             ;
+; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ;
+; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v         ;
+; quartus/hello_adc/synthesis/submodules/altera_reset_controller.sdc              ;
+; quartus/hello_adc/synthesis/submodules/altera_reset_controller.v                ;
+; quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v              ;
+; quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ;
+; quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ;
+; quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ;
+; quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v             ;
+; quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v                       ;
+; ramstart.mif                                                                    ;
+; sevsegxdec.vhd                                                                  ;
+; sync.vhd                                                                        ;
+; sync.vhd.bak                                                                    ;
+; txtscreen.vhd                                                                   ;
+; vga.qpf                                                                         ;
+; vga.qsf                                                                         ;
+; vga_assignment_defaults.qdf                                                     ;
++---------------------------------------------------------------------------------+
+
+
++------------------------+
+; Files Not Restored     ;
++------------------------+
+; File Name              ;
++------------------------+
+; qar_info.json          ;
+; DE10_LITE_Golden_Top.v ;
++------------------------+
+
+
