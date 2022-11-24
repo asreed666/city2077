@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga
-Wed Nov 23 12:12:46 2022
+Thu Nov 24 15:59:06 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -107,7 +107,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 23 12:12:46 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 24 15:59:06 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; vga                                         ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
@@ -225,9 +225,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -2203,7 +2203,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -2213,34 +2213,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Nov 23 12:12:22 2022
+    Info: Processing started: Thu Nov 24 15:58:51 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga -c vga
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12248): Elaborating Platform Designer system entity "hello_adc.qsys"
-Info (12250): 2022.11.23.12:12:31 Progress: Loading quartus/hello_adc.qsys
-Info (12250): 2022.11.23.12:12:31 Progress: Reading input file
-Info (12250): 2022.11.23.12:12:31 Progress: Adding adc_control_core [altera_modular_adc 20.1]
-Info (12250): 2022.11.23.12:12:31 Progress: Parameterizing module adc_control_core
-Info (12250): 2022.11.23.12:12:31 Progress: Adding altpll [altpll 20.1]
-Info (12250): 2022.11.23.12:12:32 Progress: Parameterizing module altpll
-Info (12250): 2022.11.23.12:12:32 Progress: Adding clk_50 [clock_source 20.1]
-Info (12250): 2022.11.23.12:12:32 Progress: Parameterizing module clk_50
-Info (12250): 2022.11.23.12:12:32 Progress: Adding clock_bridge [altera_clock_bridge 20.1]
-Info (12250): 2022.11.23.12:12:32 Progress: Parameterizing module clock_bridge
-Info (12250): 2022.11.23.12:12:32 Progress: Building connections
-Info (12250): 2022.11.23.12:12:32 Progress: Parameterizing connections
-Info (12250): 2022.11.23.12:12:32 Progress: Validating
-Info (12250): 2022.11.23.12:12:32 Progress: Done reading input file
-Warning (12251): Hello_adc.altpll: altpll.areset_conduit must be exported, or connected to a matching conduit.
-Warning (12251): Hello_adc.altpll: altpll.pll_slave must be connected to an Avalon-MM master
-Info (12250): Hello_adc: Generating hello_adc "hello_adc" for QUARTUS_SYNTH
-Info (12250): Adc_control_core: "hello_adc" instantiated altera_modular_adc "adc_control_core"
-Info (12250): Altpll: "hello_adc" instantiated altpll "altpll"
-Info (12250): Rst_controller: "hello_adc" instantiated altera_reset_controller "rst_controller"
-Info (12250): Control_internal: "adc_control_core" instantiated altera_modular_adc_control "control_internal"
-Info (12250): Hello_adc: Done "hello_adc" with 5 modules, 13 files
-Info (12249): Finished elaborating Platform Designer system entity "hello_adc.qsys"
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/hello_adc.v
     Info (12023): Found entity 1: hello_adc File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/altera_reset_controller.v
@@ -2301,28 +2277,6 @@ Info (12021): Found 2 design units, including 0 entities, in source file pcgspri
 Info (12021): Found 2 design units, including 0 entities, in source file char2std.vhd
     Info (12022): Found design unit 1: CHAR2STD File: /home/asr/Documents/GitHub/city2077/char2std.vhd Line: 6
     Info (12022): Found design unit 2: CHAR2STD-body File: /home/asr/Documents/GitHub/city2077/char2std.vhd Line: 11
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/hello_adc.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/hello_adc.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/hello_adc.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_modular_adc_control.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_modular_adc_control_avrg_fifo.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control_avrg_fifo.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_modular_adc_control_fsm.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control_fsm.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_reset_controller.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_reset_controller.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_reset_synchronizer.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_reset_synchronizer.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/chsel_code_converter_sw_to_hw.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/chsel_code_converter_sw_to_hw.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/fiftyfivenm_adcblock_primitive_wrapper.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/fiftyfivenm_adcblock_top_wrapper.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/fiftyfivenm_adcblock_top_wrapper.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/hello_adc_adc_control_core.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/hello_adc_adc_control_core.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/hello_adc_altpll.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/hello_adc_altpll.v
 Info (12127): Elaborating entity "DE10_LITE_Golden_Top" for the top level hierarchy
 Warning (10034): Output port "DRAM_ADDR" at DE10_LITE_Golden_Top.v(46) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
 Warning (10034): Output port "DRAM_BA" at DE10_LITE_Golden_Top.v(47) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 47
@@ -2788,11 +2742,11 @@ Info (21057): Implemented 4510 device resources after synthesis - the final reso
     Info (21061): Implemented 4306 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 175 warnings
-    Info: Peak virtual memory: 486 megabytes
-    Info: Processing ended: Wed Nov 23 12:12:46 2022
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 173 warnings
+    Info: Peak virtual memory: 491 megabytes
+    Info: Processing ended: Thu Nov 24 15:59:06 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +------------------------------------------+
