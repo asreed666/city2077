@@ -1,5 +1,5 @@
 Flow report for vga
-Wed Nov 23 12:13:29 2022
+Wed Nov 23 19:33:20 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,14 +41,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 23 12:13:24 2022       ;
+; Flow Status                        ; Successful - Wed Nov 23 19:33:13 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; vga                                         ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 4,283 / 49,760 ( 9 % )                      ;
+; Total logic elements               ; 4,278 / 49,760 ( 9 % )                      ;
 ;     Total combinational functions  ; 4,227 / 49,760 ( 8 % )                      ;
 ;     Dedicated logic registers      ; 349 / 49,760 ( < 1 % )                      ;
 ; Total registers                    ; 349                                         ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/23/2022 12:12:22 ;
+; Start date & time ; 11/23/2022 19:32:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vga                 ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-------------------------------------------------------------+---------------+----------------------+------------+
 ; Assignment Name                     ; Value                                                       ; Default Value ; Entity Name          ; Section Id ;
 +-------------------------------------+-------------------------------------------------------------+---------------+----------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 830022945006.166920554253999                                ; --            ; --                   ; --         ;
+; COMPILER_SIGNATURE_ID               ; 181161466952225.166923192916404                             ; --            ; --                   ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                          ; --            ; --                   ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                           ; --            ; --                   ; --         ;
 ; MISC_FILE                           ; quartus/hello_adc/synthesis/../hello_adc.cmp                ; --            ; --                   ; --         ;
@@ -114,11 +114,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 486 MB              ; 00:00:40                           ;
-; Fitter               ; 00:00:34     ; 1.3                     ; 1136 MB             ; 00:00:56                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 376 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 2.0                     ; 549 MB              ; 00:00:07                           ;
-; Total                ; 00:01:04     ; --                      ; --                  ; 00:01:46                           ;
+; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4871 MB             ; 00:00:20                           ;
+; Fitter               ; 00:00:36     ; 1.5                     ; 5835 MB             ; 00:00:31                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4704 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:05     ; 2.3                     ; 4885 MB             ; 00:00:07                           ;
+; Total                ; 00:01:05     ; --                      ; --                  ; 00:01:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -127,10 +127,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Stone-DT         ; Linux Mint ; 20         ; x86_64         ;
-; Fitter               ; Stone-DT         ; Linux Mint ; 20         ; x86_64         ;
-; Assembler            ; Stone-DT         ; Linux Mint ; 20         ; x86_64         ;
-; Timing Analyzer      ; Stone-DT         ; Linux Mint ; 20         ; x86_64         ;
+; Analysis & Synthesis ; Laptop1          ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Laptop1          ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Laptop1          ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Laptop1          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

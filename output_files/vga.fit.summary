@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Nov 23 12:13:20 2022
+Fitter Status : Successful - Wed Nov 23 19:33:07 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : vga
 Top-level Entity Name : DE10_LITE_Golden_Top
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 4,283 / 49,760 ( 9 % )
+Total logic elements : 4,278 / 49,760 ( 9 % )
     Total combinational functions : 4,227 / 49,760 ( 8 % )
     Dedicated logic registers : 349 / 49,760 ( < 1 % )
 Total registers : 349

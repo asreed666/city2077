@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga
-Wed Nov 23 12:12:46 2022
+Wed Nov 23 19:32:30 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -107,7 +107,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 23 12:12:46 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 23 19:32:30 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; vga                                         ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
@@ -217,17 +217,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -236,85 +238,85 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-----------+
 ; File Name with User-Entered Path                                                ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                        ; Library   ;
 +---------------------------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-----------+
-; quartus/hello_adc/synthesis/hello_adc.v                                         ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/hello_adc.v                                         ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/altera_reset_controller.v                ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v                ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v              ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v              ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v                       ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v                       ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v             ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v             ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v             ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v             ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v         ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v         ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; hello_adc ;
-; quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; hello_adc ;
-; fpga/src/paddle.vhd                                                             ; yes             ; User VHDL File                         ; /home/asr/Documents/GitHub/city2077/fpga/src/paddle.vhd                                                             ;           ;
-; sevsegxdec.vhd                                                                  ; yes             ; User VHDL File                         ; /home/asr/Documents/GitHub/city2077/sevsegxdec.vhd                                                                  ;           ;
-; sync.vhd                                                                        ; yes             ; User VHDL File                         ; /home/asr/Documents/GitHub/city2077/sync.vhd                                                                        ;           ;
-; VGA.vhd                                                                         ; yes             ; User VHDL File                         ; /home/asr/Documents/GitHub/city2077/VGA.vhd                                                                         ;           ;
-; pll.v                                                                           ; yes             ; User Wizard-Generated File             ; /home/asr/Documents/GitHub/city2077/pll.v                                                                           ;           ;
-; pcgsprite.vhd                                                                   ; yes             ; User VHDL File                         ; /home/asr/Documents/GitHub/city2077/pcgsprite.vhd                                                                   ;           ;
-; DE10_LITE_Golden_Top.v                                                          ; yes             ; User Verilog HDL File                  ; /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v                                                          ;           ;
-; txtscreen.vhd                                                                   ; yes             ; User VHDL File                         ; /home/asr/Documents/GitHub/city2077/txtscreen.vhd                                                                   ;           ;
-; dispmem.v                                                                       ; yes             ; User Wizard-Generated File             ; /home/asr/Documents/GitHub/city2077/dispmem.v                                                                       ;           ;
-; charrom.v                                                                       ; yes             ; User Wizard-Generated File             ; /home/asr/Documents/GitHub/city2077/charrom.v                                                                       ;           ;
-; pcgsprite2.vhd                                                                  ; yes             ; User VHDL File                         ; /home/asr/Documents/GitHub/city2077/pcgsprite2.vhd                                                                  ;           ;
-; char2std.vhd                                                                    ; yes             ; User VHDL File                         ; /home/asr/Documents/GitHub/city2077/char2std.vhd                                                                    ;           ;
-; altpll.tdf                                                                      ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                                            ;           ;
-; aglobal201.inc                                                                  ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                        ;           ;
-; stratix_pll.inc                                                                 ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                                       ;           ;
-; stratixii_pll.inc                                                               ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                                     ;           ;
-; cycloneii_pll.inc                                                               ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                     ;           ;
-; db/pll_altpll.v                                                                 ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/pll_altpll.v                                                                 ;           ;
-; altsyncram.tdf                                                                  ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                        ;           ;
-; stratix_ram_block.inc                                                           ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                 ;           ;
-; lpm_mux.inc                                                                     ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                           ;           ;
-; lpm_decode.inc                                                                  ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                        ;           ;
-; a_rdenreg.inc                                                                   ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                         ;           ;
-; altrom.inc                                                                      ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                            ;           ;
-; altram.inc                                                                      ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altram.inc                                            ;           ;
-; altdpram.inc                                                                    ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                          ;           ;
-; db/altsyncram_ag91.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/altsyncram_ag91.tdf                                                          ;           ;
-; font18x12.hex                                                                   ; yes             ; Auto-Found Memory Initialization File  ; /home/asr/Documents/GitHub/city2077/font18x12.hex                                                                   ;           ;
-; db/altsyncram_0tp1.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/altsyncram_0tp1.tdf                                                          ;           ;
-; ramstart.mif                                                                    ; yes             ; Auto-Found Memory Initialization File  ; /home/asr/Documents/GitHub/city2077/ramstart.mif                                                                    ;           ;
-; altera_std_synchronizer.v                                                       ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altera_std_synchronizer.v                             ;           ;
-; scfifo.tdf                                                                      ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf                                            ;           ;
-; a_regfifo.inc                                                                   ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/a_regfifo.inc                                         ;           ;
-; a_dpfifo.inc                                                                    ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/a_dpfifo.inc                                          ;           ;
-; a_i2fifo.inc                                                                    ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/a_i2fifo.inc                                          ;           ;
-; a_fffifo.inc                                                                    ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/a_fffifo.inc                                          ;           ;
-; a_f2fifo.inc                                                                    ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/a_f2fifo.inc                                          ;           ;
-; db/scfifo_ds61.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/scfifo_ds61.tdf                                                              ;           ;
-; db/a_dpfifo_3o41.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/a_dpfifo_3o41.tdf                                                            ;           ;
-; db/a_fefifo_c6e.tdf                                                             ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/a_fefifo_c6e.tdf                                                             ;           ;
-; db/cntr_337.tdf                                                                 ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/cntr_337.tdf                                                                 ;           ;
-; db/altsyncram_rqn1.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf                                                          ;           ;
-; db/cntr_n2b.tdf                                                                 ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/cntr_n2b.tdf                                                                 ;           ;
-; lpm_divide.tdf                                                                  ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                        ;           ;
-; abs_divider.inc                                                                 ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                       ;           ;
-; sign_div_unsign.inc                                                             ; yes             ; Megafunction                           ; /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                   ;           ;
-; db/lpm_divide_ekl.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/lpm_divide_ekl.tdf                                                           ;           ;
-; db/sign_div_unsign_dkh.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/sign_div_unsign_dkh.tdf                                                      ;           ;
-; db/alt_u_div_4fe.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/alt_u_div_4fe.tdf                                                            ;           ;
-; db/add_sub_t3c.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/add_sub_t3c.tdf                                                              ;           ;
-; db/add_sub_u3c.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/add_sub_u3c.tdf                                                              ;           ;
-; db/lpm_divide_8sl.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/lpm_divide_8sl.tdf                                                           ;           ;
-; db/sign_div_unsign_akh.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/sign_div_unsign_akh.tdf                                                      ;           ;
-; db/alt_u_div_uee.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/alt_u_div_uee.tdf                                                            ;           ;
-; db/lpm_divide_25o.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/lpm_divide_25o.tdf                                                           ;           ;
-; db/abs_divider_4dg.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/abs_divider_4dg.tdf                                                          ;           ;
-; db/alt_u_div_ske.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/alt_u_div_ske.tdf                                                            ;           ;
-; db/lpm_abs_8b9.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/lpm_abs_8b9.tdf                                                              ;           ;
-; db/lpm_divide_inl.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/lpm_divide_inl.tdf                                                           ;           ;
-; db/sign_div_unsign_hnh.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/sign_div_unsign_hnh.tdf                                                      ;           ;
-; db/alt_u_div_cle.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/alt_u_div_cle.tdf                                                            ;           ;
-; db/lpm_divide_8nl.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/lpm_divide_8nl.tdf                                                           ;           ;
-; db/sign_div_unsign_7nh.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/sign_div_unsign_7nh.tdf                                                      ;           ;
-; db/alt_u_div_oke.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/alt_u_div_oke.tdf                                                            ;           ;
-; db/lpm_divide_fbo.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/lpm_divide_fbo.tdf                                                           ;           ;
-; db/abs_divider_kbg.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/abs_divider_kbg.tdf                                                          ;           ;
-; db/alt_u_div_she.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/alt_u_div_she.tdf                                                            ;           ;
-; db/lpm_abs_o99.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; /home/asr/Documents/GitHub/city2077/db/lpm_abs_o99.tdf                                                              ;           ;
+; quartus/hello_adc/synthesis/hello_adc.v                                         ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/hello_adc.v                                         ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/altera_reset_controller.v                ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v                ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v              ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v              ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v                       ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v             ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v             ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v             ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v             ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v         ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v         ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; hello_adc ;
+; quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; hello_adc ;
+; fpga/src/paddle.vhd                                                             ; yes             ; User VHDL File                         ; C:/Users/eleceng/Documents/city2077/fpga/src/paddle.vhd                                                             ;           ;
+; sevsegxdec.vhd                                                                  ; yes             ; User VHDL File                         ; C:/Users/eleceng/Documents/city2077/sevsegxdec.vhd                                                                  ;           ;
+; sync.vhd                                                                        ; yes             ; User VHDL File                         ; C:/Users/eleceng/Documents/city2077/sync.vhd                                                                        ;           ;
+; VGA.vhd                                                                         ; yes             ; User VHDL File                         ; C:/Users/eleceng/Documents/city2077/VGA.vhd                                                                         ;           ;
+; pll.v                                                                           ; yes             ; User Wizard-Generated File             ; C:/Users/eleceng/Documents/city2077/pll.v                                                                           ;           ;
+; pcgsprite.vhd                                                                   ; yes             ; User VHDL File                         ; C:/Users/eleceng/Documents/city2077/pcgsprite.vhd                                                                   ;           ;
+; DE10_LITE_Golden_Top.v                                                          ; yes             ; User Verilog HDL File                  ; C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v                                                          ;           ;
+; txtscreen.vhd                                                                   ; yes             ; User VHDL File                         ; C:/Users/eleceng/Documents/city2077/txtscreen.vhd                                                                   ;           ;
+; dispmem.v                                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/eleceng/Documents/city2077/dispmem.v                                                                       ;           ;
+; charrom.v                                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/eleceng/Documents/city2077/charrom.v                                                                       ;           ;
+; pcgsprite2.vhd                                                                  ; yes             ; User VHDL File                         ; C:/Users/eleceng/Documents/city2077/pcgsprite2.vhd                                                                  ;           ;
+; char2std.vhd                                                                    ; yes             ; User VHDL File                         ; C:/Users/eleceng/Documents/city2077/char2std.vhd                                                                    ;           ;
+; altpll.tdf                                                                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                                                   ;           ;
+; aglobal201.inc                                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                               ;           ;
+; stratix_pll.inc                                                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                                              ;           ;
+; stratixii_pll.inc                                                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                                            ;           ;
+; cycloneii_pll.inc                                                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                            ;           ;
+; db/pll_altpll.v                                                                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/pll_altpll.v                                                                 ;           ;
+; altsyncram.tdf                                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                               ;           ;
+; stratix_ram_block.inc                                                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                        ;           ;
+; lpm_mux.inc                                                                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                  ;           ;
+; lpm_decode.inc                                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                               ;           ;
+; a_rdenreg.inc                                                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                ;           ;
+; altrom.inc                                                                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                   ;           ;
+; altram.inc                                                                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                   ;           ;
+; altdpram.inc                                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                 ;           ;
+; db/altsyncram_ag91.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/altsyncram_ag91.tdf                                                          ;           ;
+; font18x12.hex                                                                   ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/eleceng/Documents/city2077/font18x12.hex                                                                   ;           ;
+; db/altsyncram_0tp1.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/altsyncram_0tp1.tdf                                                          ;           ;
+; ramstart.mif                                                                    ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/eleceng/Documents/city2077/ramstart.mif                                                                    ;           ;
+; altera_std_synchronizer.v                                                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_std_synchronizer.v                                    ;           ;
+; scfifo.tdf                                                                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf                                                   ;           ;
+; a_regfifo.inc                                                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_regfifo.inc                                                ;           ;
+; a_dpfifo.inc                                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_dpfifo.inc                                                 ;           ;
+; a_i2fifo.inc                                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_i2fifo.inc                                                 ;           ;
+; a_fffifo.inc                                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_fffifo.inc                                                 ;           ;
+; a_f2fifo.inc                                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_f2fifo.inc                                                 ;           ;
+; db/scfifo_ds61.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/scfifo_ds61.tdf                                                              ;           ;
+; db/a_dpfifo_3o41.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/a_dpfifo_3o41.tdf                                                            ;           ;
+; db/a_fefifo_c6e.tdf                                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/a_fefifo_c6e.tdf                                                             ;           ;
+; db/cntr_337.tdf                                                                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/cntr_337.tdf                                                                 ;           ;
+; db/altsyncram_rqn1.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf                                                          ;           ;
+; db/cntr_n2b.tdf                                                                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/cntr_n2b.tdf                                                                 ;           ;
+; lpm_divide.tdf                                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                               ;           ;
+; abs_divider.inc                                                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                              ;           ;
+; sign_div_unsign.inc                                                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                          ;           ;
+; db/lpm_divide_ekl.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/lpm_divide_ekl.tdf                                                           ;           ;
+; db/sign_div_unsign_dkh.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/sign_div_unsign_dkh.tdf                                                      ;           ;
+; db/alt_u_div_4fe.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/alt_u_div_4fe.tdf                                                            ;           ;
+; db/add_sub_t3c.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/add_sub_t3c.tdf                                                              ;           ;
+; db/add_sub_u3c.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/add_sub_u3c.tdf                                                              ;           ;
+; db/lpm_divide_8sl.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/lpm_divide_8sl.tdf                                                           ;           ;
+; db/sign_div_unsign_akh.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/sign_div_unsign_akh.tdf                                                      ;           ;
+; db/alt_u_div_uee.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/alt_u_div_uee.tdf                                                            ;           ;
+; db/lpm_divide_25o.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/lpm_divide_25o.tdf                                                           ;           ;
+; db/abs_divider_4dg.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/abs_divider_4dg.tdf                                                          ;           ;
+; db/alt_u_div_ske.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/alt_u_div_ske.tdf                                                            ;           ;
+; db/lpm_abs_8b9.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/lpm_abs_8b9.tdf                                                              ;           ;
+; db/lpm_divide_inl.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/lpm_divide_inl.tdf                                                           ;           ;
+; db/sign_div_unsign_hnh.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/sign_div_unsign_hnh.tdf                                                      ;           ;
+; db/alt_u_div_cle.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/alt_u_div_cle.tdf                                                            ;           ;
+; db/lpm_divide_8nl.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/lpm_divide_8nl.tdf                                                           ;           ;
+; db/sign_div_unsign_7nh.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/sign_div_unsign_7nh.tdf                                                      ;           ;
+; db/alt_u_div_oke.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/alt_u_div_oke.tdf                                                            ;           ;
+; db/lpm_divide_fbo.tdf                                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/lpm_divide_fbo.tdf                                                           ;           ;
+; db/abs_divider_kbg.tdf                                                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/abs_divider_kbg.tdf                                                          ;           ;
+; db/alt_u_div_she.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/alt_u_div_she.tdf                                                            ;           ;
+; db/lpm_abs_o99.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; C:/Users/eleceng/Documents/city2077/db/lpm_abs_o99.tdf                                                              ;           ;
 +---------------------------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------+-----------+
 
 
@@ -678,16 +680,16 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|player2games[3]                                                                                                                                                                             ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|player1games[6]                                                                                                                                                                             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[1] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|BL_Y1[5]                                                                                                                                                                                    ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 7 LEs                ; 14 LEs                 ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|player2score[0]                                                                                                                                                                             ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|bl_ydelta[4]                                                                                                                                                                                ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|player1score[4]                                                                                                                                                                             ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|player2games[5]                                                                                                                                                                             ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|player1games[5]                                                                                                                                                                             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[7] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|BL_Y1[1]                                                                                                                                                                                    ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 7 LEs                ; 14 LEs                 ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|player2score[3]                                                                                                                                                                             ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|bl_ydelta[5]                                                                                                                                                                                ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|player1score[3]                                                                                                                                                                             ;
 ; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|BL_X1[8]                                                                                                                                                                                    ;
-; 9:1                ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|bl_xdelta[3]                                                                                                                                                                                ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|BL_Y1[7]                                                                                                                                                                                    ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|bl_xdelta[0]                                                                                                                                                                                ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|BL_Y1[2]                                                                                                                                                                                    ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |DE10_LITE_Golden_Top|VGA:VGA_DISP|SYNC:C1|BL_X1[2]                                                                                                                                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -2213,134 +2215,88 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Nov 23 12:12:22 2022
+    Info: Processing started: Wed Nov 23 19:32:09 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga -c vga
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12248): Elaborating Platform Designer system entity "hello_adc.qsys"
-Info (12250): 2022.11.23.12:12:31 Progress: Loading quartus/hello_adc.qsys
-Info (12250): 2022.11.23.12:12:31 Progress: Reading input file
-Info (12250): 2022.11.23.12:12:31 Progress: Adding adc_control_core [altera_modular_adc 20.1]
-Info (12250): 2022.11.23.12:12:31 Progress: Parameterizing module adc_control_core
-Info (12250): 2022.11.23.12:12:31 Progress: Adding altpll [altpll 20.1]
-Info (12250): 2022.11.23.12:12:32 Progress: Parameterizing module altpll
-Info (12250): 2022.11.23.12:12:32 Progress: Adding clk_50 [clock_source 20.1]
-Info (12250): 2022.11.23.12:12:32 Progress: Parameterizing module clk_50
-Info (12250): 2022.11.23.12:12:32 Progress: Adding clock_bridge [altera_clock_bridge 20.1]
-Info (12250): 2022.11.23.12:12:32 Progress: Parameterizing module clock_bridge
-Info (12250): 2022.11.23.12:12:32 Progress: Building connections
-Info (12250): 2022.11.23.12:12:32 Progress: Parameterizing connections
-Info (12250): 2022.11.23.12:12:32 Progress: Validating
-Info (12250): 2022.11.23.12:12:32 Progress: Done reading input file
-Warning (12251): Hello_adc.altpll: altpll.areset_conduit must be exported, or connected to a matching conduit.
-Warning (12251): Hello_adc.altpll: altpll.pll_slave must be connected to an Avalon-MM master
-Info (12250): Hello_adc: Generating hello_adc "hello_adc" for QUARTUS_SYNTH
-Info (12250): Adc_control_core: "hello_adc" instantiated altera_modular_adc "adc_control_core"
-Info (12250): Altpll: "hello_adc" instantiated altpll "altpll"
-Info (12250): Rst_controller: "hello_adc" instantiated altera_reset_controller "rst_controller"
-Info (12250): Control_internal: "adc_control_core" instantiated altera_modular_adc_control "control_internal"
-Info (12250): Hello_adc: Done "hello_adc" with 5 modules, 13 files
-Info (12249): Finished elaborating Platform Designer system entity "hello_adc.qsys"
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/hello_adc.v
-    Info (12023): Found entity 1: hello_adc File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 6
+    Info (12023): Found entity 1: hello_adc File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/altera_reset_controller.v
-    Info (12023): Found entity 1: altera_reset_controller File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v Line: 42
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v
-    Info (12023): Found entity 1: altera_reset_synchronizer File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v Line: 24
 Info (12021): Found 4 design units, including 4 entities, in source file quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v
-    Info (12023): Found entity 1: hello_adc_altpll_dffpipe_l2c File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 38
-    Info (12023): Found entity 2: hello_adc_altpll_stdsync_sv6 File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 99
-    Info (12023): Found entity 3: hello_adc_altpll_altpll_5b92 File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 131
-    Info (12023): Found entity 4: hello_adc_altpll File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 218
+    Info (12023): Found entity 1: hello_adc_altpll_dffpipe_l2c File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 38
+    Info (12023): Found entity 2: hello_adc_altpll_stdsync_sv6 File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 99
+    Info (12023): Found entity 3: hello_adc_altpll_altpll_5b92 File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 131
+    Info (12023): Found entity 4: hello_adc_altpll File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 218
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v
-    Info (12023): Found entity 1: hello_adc_adc_control_core File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v Line: 9
+    Info (12023): Found entity 1: hello_adc_adc_control_core File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v
-    Info (12023): Found entity 1: altera_modular_adc_control File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v Line: 18
+    Info (12023): Found entity 1: altera_modular_adc_control File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v
-    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
+    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v
-    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 18
+    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v
-    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v Line: 32
+    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
-    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
-    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
 Info (12021): Found 2 design units, including 1 entities, in source file fpga/src/paddle.vhd
-    Info (12022): Found design unit 1: paddles-A File: /home/asr/Documents/GitHub/city2077/fpga/src/paddle.vhd Line: 21
-    Info (12023): Found entity 1: paddles File: /home/asr/Documents/GitHub/city2077/fpga/src/paddle.vhd Line: 8
+    Info (12022): Found design unit 1: paddles-A File: C:/Users/eleceng/Documents/city2077/fpga/src/paddle.vhd Line: 21
+    Info (12023): Found entity 1: paddles File: C:/Users/eleceng/Documents/city2077/fpga/src/paddle.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file sevsegxdec.vhd
-    Info (12022): Found design unit 1: sevSegxDec-bhv File: /home/asr/Documents/GitHub/city2077/sevsegxdec.vhd Line: 18
-    Info (12023): Found entity 1: sevSegxDec File: /home/asr/Documents/GitHub/city2077/sevsegxdec.vhd Line: 8
+    Info (12022): Found design unit 1: sevSegxDec-bhv File: C:/Users/eleceng/Documents/city2077/sevsegxdec.vhd Line: 18
+    Info (12023): Found entity 1: sevSegxDec File: C:/Users/eleceng/Documents/city2077/sevsegxdec.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file quadrature_decoder.vhd
-    Info (12022): Found design unit 1: quadrature_decoder-logic File: /home/asr/Documents/GitHub/city2077/quadrature_decoder.vhd Line: 40
-    Info (12023): Found entity 1: quadrature_decoder File: /home/asr/Documents/GitHub/city2077/quadrature_decoder.vhd Line: 26
+    Info (12022): Found design unit 1: quadrature_decoder-logic File: C:/Users/eleceng/Documents/city2077/quadrature_decoder.vhd Line: 40
+    Info (12023): Found entity 1: quadrature_decoder File: C:/Users/eleceng/Documents/city2077/quadrature_decoder.vhd Line: 26
 Info (12021): Found 2 design units, including 1 entities, in source file sync.vhd
-    Info (12022): Found design unit 1: SYNC-MAIN File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 32
-    Info (12023): Found entity 1: SYNC File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file VGA.vhd
-    Info (12022): Found design unit 1: VGA-MAIN File: /home/asr/Documents/GitHub/city2077/VGA.vhd Line: 29
-    Info (12023): Found entity 1: VGA File: /home/asr/Documents/GitHub/city2077/VGA.vhd Line: 6
+    Info (12022): Found design unit 1: SYNC-MAIN File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 32
+    Info (12023): Found entity 1: SYNC File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file vga.vhd
+    Info (12022): Found design unit 1: VGA-MAIN File: C:/Users/eleceng/Documents/city2077/VGA.vhd Line: 29
+    Info (12023): Found entity 1: VGA File: C:/Users/eleceng/Documents/city2077/VGA.vhd Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: pll File: /home/asr/Documents/GitHub/city2077/pll.v Line: 40
+    Info (12023): Found entity 1: pll File: C:/Users/eleceng/Documents/city2077/pll.v Line: 40
 Info (12021): Found 2 design units, including 0 entities, in source file pcgsprite.vhd
-    Info (12022): Found design unit 1: DW File: /home/asr/Documents/GitHub/city2077/pcgsprite.vhd Line: 5
-    Info (12022): Found design unit 2: DW-body File: /home/asr/Documents/GitHub/city2077/pcgsprite.vhd Line: 10
-Info (12021): Found 1 design units, including 1 entities, in source file DE10_LITE_Golden_Top.v
-    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 29
+    Info (12022): Found design unit 1: DW File: C:/Users/eleceng/Documents/city2077/pcgsprite.vhd Line: 5
+    Info (12022): Found design unit 2: DW-body File: C:/Users/eleceng/Documents/city2077/pcgsprite.vhd Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file de10_lite_golden_top.v
+    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 29
 Info (12021): Found 2 design units, including 1 entities, in source file txtscreen.vhd
-    Info (12022): Found design unit 1: txtScreen-RTL File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 23
-    Info (12023): Found entity 1: txtScreen File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 8
+    Info (12022): Found design unit 1: txtScreen-RTL File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 23
+    Info (12023): Found entity 1: txtScreen File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file dispmem.v
-    Info (12023): Found entity 1: dispmem File: /home/asr/Documents/GitHub/city2077/dispmem.v Line: 40
+    Info (12023): Found entity 1: dispmem File: C:/Users/eleceng/Documents/city2077/dispmem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file charrom.v
-    Info (12023): Found entity 1: charrom File: /home/asr/Documents/GitHub/city2077/charrom.v Line: 40
+    Info (12023): Found entity 1: charrom File: C:/Users/eleceng/Documents/city2077/charrom.v Line: 40
 Info (12021): Found 2 design units, including 0 entities, in source file pcgsprite2.vhd
-    Info (12022): Found design unit 1: DW2 File: /home/asr/Documents/GitHub/city2077/pcgsprite2.vhd Line: 5
-    Info (12022): Found design unit 2: DW2-body File: /home/asr/Documents/GitHub/city2077/pcgsprite2.vhd Line: 10
+    Info (12022): Found design unit 1: DW2 File: C:/Users/eleceng/Documents/city2077/pcgsprite2.vhd Line: 5
+    Info (12022): Found design unit 2: DW2-body File: C:/Users/eleceng/Documents/city2077/pcgsprite2.vhd Line: 10
 Info (12021): Found 2 design units, including 0 entities, in source file char2std.vhd
-    Info (12022): Found design unit 1: CHAR2STD File: /home/asr/Documents/GitHub/city2077/char2std.vhd Line: 6
-    Info (12022): Found design unit 2: CHAR2STD-body File: /home/asr/Documents/GitHub/city2077/char2std.vhd Line: 11
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/hello_adc.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/hello_adc.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/hello_adc.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_modular_adc_control.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_modular_adc_control_avrg_fifo.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control_avrg_fifo.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_modular_adc_control_fsm.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_modular_adc_control_fsm.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_reset_controller.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_reset_controller.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/altera_reset_synchronizer.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/altera_reset_synchronizer.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/chsel_code_converter_sw_to_hw.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/chsel_code_converter_sw_to_hw.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/chsel_code_converter_sw_to_hw.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/fiftyfivenm_adcblock_primitive_wrapper.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/fiftyfivenm_adcblock_top_wrapper.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/fiftyfivenm_adcblock_top_wrapper.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/hello_adc_adc_control_core.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/hello_adc_adc_control_core.v
-Info (15248): File "/home/asr/Documents/GitHub/city2077/db/ip/hello_adc/submodules/hello_adc_altpll.v" is a duplicate of already analyzed file "/home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (12021): Found 0 design units, including 0 entities, in source file db/ip/hello_adc/submodules/hello_adc_altpll.v
+    Info (12022): Found design unit 1: CHAR2STD File: C:/Users/eleceng/Documents/city2077/char2std.vhd Line: 6
+    Info (12022): Found design unit 2: CHAR2STD-body File: C:/Users/eleceng/Documents/city2077/char2std.vhd Line: 11
 Info (12127): Elaborating entity "DE10_LITE_Golden_Top" for the top level hierarchy
-Warning (10034): Output port "DRAM_ADDR" at DE10_LITE_Golden_Top.v(46) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-Warning (10034): Output port "DRAM_BA" at DE10_LITE_Golden_Top.v(47) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 47
-Warning (10034): Output port "DRAM_CAS_N" at DE10_LITE_Golden_Top.v(48) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 48
-Warning (10034): Output port "DRAM_CKE" at DE10_LITE_Golden_Top.v(49) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 49
-Warning (10034): Output port "DRAM_CLK" at DE10_LITE_Golden_Top.v(50) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 50
-Warning (10034): Output port "DRAM_CS_N" at DE10_LITE_Golden_Top.v(51) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 51
-Warning (10034): Output port "DRAM_LDQM" at DE10_LITE_Golden_Top.v(53) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 53
-Warning (10034): Output port "DRAM_RAS_N" at DE10_LITE_Golden_Top.v(54) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 54
-Warning (10034): Output port "DRAM_UDQM" at DE10_LITE_Golden_Top.v(55) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 55
-Warning (10034): Output port "DRAM_WE_N" at DE10_LITE_Golden_Top.v(56) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 56
-Warning (10034): Output port "GSENSOR_CS_N" at DE10_LITE_Golden_Top.v(105) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 105
-Warning (10034): Output port "GSENSOR_SCLK" at DE10_LITE_Golden_Top.v(107) has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 107
-Info (12128): Elaborating entity "VGA" for hierarchy "VGA:VGA_DISP" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 144
-Info (12128): Elaborating entity "pll" for hierarchy "VGA:VGA_DISP|pll:C" File: /home/asr/Documents/GitHub/city2077/VGA.vhd Line: 79
-Info (12128): Elaborating entity "altpll" for hierarchy "VGA:VGA_DISP|pll:C|altpll:altpll_component" File: /home/asr/Documents/GitHub/city2077/pll.v Line: 91
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|pll:C|altpll:altpll_component" File: /home/asr/Documents/GitHub/city2077/pll.v Line: 91
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|pll:C|altpll:altpll_component" with the following parameter: File: /home/asr/Documents/GitHub/city2077/pll.v Line: 91
+Warning (10034): Output port "DRAM_ADDR" at DE10_LITE_Golden_Top.v(46) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+Warning (10034): Output port "DRAM_BA" at DE10_LITE_Golden_Top.v(47) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 47
+Warning (10034): Output port "DRAM_CAS_N" at DE10_LITE_Golden_Top.v(48) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 48
+Warning (10034): Output port "DRAM_CKE" at DE10_LITE_Golden_Top.v(49) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 49
+Warning (10034): Output port "DRAM_CLK" at DE10_LITE_Golden_Top.v(50) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 50
+Warning (10034): Output port "DRAM_CS_N" at DE10_LITE_Golden_Top.v(51) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 51
+Warning (10034): Output port "DRAM_LDQM" at DE10_LITE_Golden_Top.v(53) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 53
+Warning (10034): Output port "DRAM_RAS_N" at DE10_LITE_Golden_Top.v(54) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 54
+Warning (10034): Output port "DRAM_UDQM" at DE10_LITE_Golden_Top.v(55) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 55
+Warning (10034): Output port "DRAM_WE_N" at DE10_LITE_Golden_Top.v(56) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 56
+Warning (10034): Output port "GSENSOR_CS_N" at DE10_LITE_Golden_Top.v(105) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 105
+Warning (10034): Output port "GSENSOR_SCLK" at DE10_LITE_Golden_Top.v(107) has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 107
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:VGA_DISP" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 144
+Info (12128): Elaborating entity "pll" for hierarchy "VGA:VGA_DISP|pll:C" File: C:/Users/eleceng/Documents/city2077/VGA.vhd Line: 79
+Info (12128): Elaborating entity "altpll" for hierarchy "VGA:VGA_DISP|pll:C|altpll:altpll_component" File: C:/Users/eleceng/Documents/city2077/pll.v Line: 91
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|pll:C|altpll:altpll_component" File: C:/Users/eleceng/Documents/city2077/pll.v Line: 91
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|pll:C|altpll:altpll_component" with the following parameter: File: C:/Users/eleceng/Documents/city2077/pll.v Line: 91
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "2000"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -2396,24 +2352,24 @@ Info (12133): Instantiated megafunction "VGA:VGA_DISP|pll:C|altpll:altpll_compon
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: pll_altpll File: /home/asr/Documents/GitHub/city2077/db/pll_altpll.v Line: 30
-Info (12128): Elaborating entity "pll_altpll" for hierarchy "VGA:VGA_DISP|pll:C|altpll:altpll_component|pll_altpll:auto_generated" File: /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "SYNC" for hierarchy "VGA:VGA_DISP|SYNC:C1" File: /home/asr/Documents/GitHub/city2077/VGA.vhd Line: 80
-Warning (10540): VHDL Signal Declaration warning at sync.vhd(91): used explicit default value for signal "P_X1" because signal was never assigned a value File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 91
-Warning (10540): VHDL Signal Declaration warning at sync.vhd(93): used explicit default value for signal "P_X2" because signal was never assigned a value File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 93
-Warning (10540): VHDL Signal Declaration warning at sync.vhd(136): used explicit default value for signal "scaleP" because signal was never assigned a value File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 136
-Warning (10540): VHDL Signal Declaration warning at sync.vhd(137): used explicit default value for signal "scaleBL" because signal was never assigned a value File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 137
-Warning (10540): VHDL Signal Declaration warning at sync.vhd(165): used explicit default value for signal "paddle" because signal was never assigned a value File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 165
-Warning (10540): VHDL Signal Declaration warning at sync.vhd(177): used explicit default value for signal "ball" because signal was never assigned a value File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 177
-Warning (10873): Using initial value X (don't care) for net "led[4..1]" at sync.vhd(20) File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 20
-Warning (10873): Using initial value X (don't care) for net "HEX2[7]" at sync.vhd(23) File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 23
-Warning (10873): Using initial value X (don't care) for net "HEX3[7]" at sync.vhd(24) File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 24
-Info (12128): Elaborating entity "txtScreen" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 191
-Warning (10492): VHDL Process Statement warning at txtscreen.vhd(89): signal "q_8x12" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 89
-Info (12128): Elaborating entity "charrom" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst" File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 54
-Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst|altsyncram:altsyncram_component" File: /home/asr/Documents/GitHub/city2077/charrom.v Line: 82
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst|altsyncram:altsyncram_component" File: /home/asr/Documents/GitHub/city2077/charrom.v Line: 82
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst|altsyncram:altsyncram_component" with the following parameter: File: /home/asr/Documents/GitHub/city2077/charrom.v Line: 82
+    Info (12023): Found entity 1: pll_altpll File: C:/Users/eleceng/Documents/city2077/db/pll_altpll.v Line: 30
+Info (12128): Elaborating entity "pll_altpll" for hierarchy "VGA:VGA_DISP|pll:C|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "SYNC" for hierarchy "VGA:VGA_DISP|SYNC:C1" File: C:/Users/eleceng/Documents/city2077/VGA.vhd Line: 80
+Warning (10540): VHDL Signal Declaration warning at sync.vhd(91): used explicit default value for signal "P_X1" because signal was never assigned a value File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 91
+Warning (10540): VHDL Signal Declaration warning at sync.vhd(93): used explicit default value for signal "P_X2" because signal was never assigned a value File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 93
+Warning (10540): VHDL Signal Declaration warning at sync.vhd(136): used explicit default value for signal "scaleP" because signal was never assigned a value File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 136
+Warning (10540): VHDL Signal Declaration warning at sync.vhd(137): used explicit default value for signal "scaleBL" because signal was never assigned a value File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 137
+Warning (10540): VHDL Signal Declaration warning at sync.vhd(165): used explicit default value for signal "paddle" because signal was never assigned a value File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 165
+Warning (10540): VHDL Signal Declaration warning at sync.vhd(177): used explicit default value for signal "ball" because signal was never assigned a value File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 177
+Warning (10873): Using initial value X (don't care) for net "led[4..1]" at sync.vhd(20) File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 20
+Warning (10873): Using initial value X (don't care) for net "HEX2[7]" at sync.vhd(23) File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 23
+Warning (10873): Using initial value X (don't care) for net "HEX3[7]" at sync.vhd(24) File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 24
+Info (12128): Elaborating entity "txtScreen" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 191
+Warning (10492): VHDL Process Statement warning at txtscreen.vhd(89): signal "q_8x12" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 89
+Info (12128): Elaborating entity "charrom" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst" File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 54
+Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst|altsyncram:altsyncram_component" File: C:/Users/eleceng/Documents/city2077/charrom.v Line: 82
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst|altsyncram:altsyncram_component" File: C:/Users/eleceng/Documents/city2077/charrom.v Line: 82
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/eleceng/Documents/city2077/charrom.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2429,24 +2385,24 @@ Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|c
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ag91.tdf
-    Info (12023): Found entity 1: altsyncram_ag91 File: /home/asr/Documents/GitHub/city2077/db/altsyncram_ag91.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_ag91" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst|altsyncram:altsyncram_component|altsyncram_ag91:auto_generated" File: /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113015): Width of data items in "font18x12.hex" is greater than the memory width. Wrapping data items to subsequent addresses. Found 72 warnings, reporting 10 File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 1
-    Warning (113009): Data at line (1) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 1
-    Warning (113009): Data at line (2) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 2
-    Warning (113009): Data at line (3) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 3
-    Warning (113009): Data at line (4) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 4
-    Warning (113009): Data at line (5) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 5
-    Warning (113009): Data at line (6) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 6
-    Warning (113009): Data at line (7) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 7
-    Warning (113009): Data at line (8) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 8
-    Warning (113009): Data at line (9) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 9
-    Warning (113009): Data at line (10) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/asr/Documents/GitHub/city2077/font18x12.hex Line: 10
-Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (1152) in the Memory Initialization File "/home/asr/Documents/GitHub/city2077/font18x12.hex" -- setting initial value for remaining addresses to 0 File: /home/asr/Documents/GitHub/city2077/charrom.v Line: 82
-Info (12128): Elaborating entity "dispmem" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst" File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 59
-Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst|altsyncram:altsyncram_component" File: /home/asr/Documents/GitHub/city2077/dispmem.v Line: 89
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst|altsyncram:altsyncram_component" File: /home/asr/Documents/GitHub/city2077/dispmem.v Line: 89
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst|altsyncram:altsyncram_component" with the following parameter: File: /home/asr/Documents/GitHub/city2077/dispmem.v Line: 89
+    Info (12023): Found entity 1: altsyncram_ag91 File: C:/Users/eleceng/Documents/city2077/db/altsyncram_ag91.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_ag91" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|charrom:font8x12_inst|altsyncram:altsyncram_component|altsyncram_ag91:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (113015): Width of data items in "font18x12.hex" is greater than the memory width. Wrapping data items to subsequent addresses. Found 72 warnings, reporting 10 File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 1
+    Warning (113009): Data at line (1) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 1
+    Warning (113009): Data at line (2) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 2
+    Warning (113009): Data at line (3) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 3
+    Warning (113009): Data at line (4) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 4
+    Warning (113009): Data at line (5) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 5
+    Warning (113009): Data at line (6) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 6
+    Warning (113009): Data at line (7) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 7
+    Warning (113009): Data at line (8) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 8
+    Warning (113009): Data at line (9) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 9
+    Warning (113009): Data at line (10) of memory initialization file "font18x12.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: C:/Users/eleceng/Documents/city2077/font18x12.hex Line: 10
+Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (1152) in the Memory Initialization File "C:/Users/eleceng/Documents/city2077/font18x12.hex" -- setting initial value for remaining addresses to 0 File: C:/Users/eleceng/Documents/city2077/charrom.v Line: 82
+Info (12128): Elaborating entity "dispmem" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst" File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 59
+Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst|altsyncram:altsyncram_component" File: C:/Users/eleceng/Documents/city2077/dispmem.v Line: 89
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst|altsyncram:altsyncram_component" File: C:/Users/eleceng/Documents/city2077/dispmem.v Line: 89
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/eleceng/Documents/city2077/dispmem.v Line: 89
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
@@ -2468,23 +2424,23 @@ Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|d
     Info (12134): Parameter "width_b" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0tp1.tdf
-    Info (12023): Found entity 1: altsyncram_0tp1 File: /home/asr/Documents/GitHub/city2077/db/altsyncram_0tp1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_0tp1" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst|altsyncram:altsyncram_component|altsyncram_0tp1:auto_generated" File: /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "paddles" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 196
-Warning (10036): Verilog HDL or VHDL warning at paddle.vhd(54): object "cur_channel" assigned a value but never read File: /home/asr/Documents/GitHub/city2077/fpga/src/paddle.vhd Line: 54
-Info (12128): Elaborating entity "hello_adc" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0" File: /home/asr/Documents/GitHub/city2077/fpga/src/paddle.vhd Line: 117
-Info (12128): Elaborating entity "hello_adc_adc_control_core" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 44
-Info (12128): Elaborating entity "altera_modular_adc_control" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v Line: 92
-Info (12128): Elaborating entity "altera_modular_adc_control_fsm" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v Line: 108
-Warning (10036): Verilog HDL or VHDL warning at altera_modular_adc_control_fsm.v(70): object "sync_ctrl_state_nxt" assigned a value but never read File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 70
-Info (12128): Elaborating entity "altera_std_synchronizer" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" with the following parameter: File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+    Info (12023): Found entity 1: altsyncram_0tp1 File: C:/Users/eleceng/Documents/city2077/db/altsyncram_0tp1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_0tp1" for hierarchy "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|dispmem:dispmem_inst|altsyncram:altsyncram_component|altsyncram_0tp1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "paddles" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 196
+Warning (10036): Verilog HDL or VHDL warning at paddle.vhd(54): object "cur_channel" assigned a value but never read File: C:/Users/eleceng/Documents/city2077/fpga/src/paddle.vhd Line: 54
+Info (12128): Elaborating entity "hello_adc" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0" File: C:/Users/eleceng/Documents/city2077/fpga/src/paddle.vhd Line: 117
+Info (12128): Elaborating entity "hello_adc_adc_control_core" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 44
+Info (12128): Elaborating entity "altera_modular_adc_control" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_adc_control_core.v Line: 92
+Info (12128): Elaborating entity "altera_modular_adc_control_fsm" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v Line: 108
+Warning (10036): Verilog HDL or VHDL warning at altera_modular_adc_control_fsm.v(70): object "sync_ctrl_state_nxt" assigned a value but never read File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 70
+Info (12128): Elaborating entity "altera_std_synchronizer" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" with the following parameter: File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
     Info (12134): Parameter "depth" = "2"
-Info (12128): Elaborating entity "altera_modular_adc_control_avrg_fifo" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 955
-Info (12128): Elaborating entity "scfifo" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" with the following parameter: File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12128): Elaborating entity "altera_modular_adc_control_avrg_fifo" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 955
+Info (12128): Elaborating entity "scfifo" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" with the following parameter: File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
     Info (12134): Parameter "add_ram_output_register" = "OFF"
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "lpm_hint" = "RAM_BLOCK_TYPE=M9K"
@@ -2497,290 +2453,290 @@ Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|paddles:paddlePosi
     Info (12134): Parameter "underflow_checking" = "ON"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_ds61.tdf
-    Info (12023): Found entity 1: scfifo_ds61 File: /home/asr/Documents/GitHub/city2077/db/scfifo_ds61.tdf Line: 25
-Info (12128): Elaborating entity "scfifo_ds61" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated" File: /home/asr/intelFPGA_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
+    Info (12023): Found entity 1: scfifo_ds61 File: C:/Users/eleceng/Documents/city2077/db/scfifo_ds61.tdf Line: 25
+Info (12128): Elaborating entity "scfifo_ds61" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_3o41.tdf
-    Info (12023): Found entity 1: a_dpfifo_3o41 File: /home/asr/Documents/GitHub/city2077/db/a_dpfifo_3o41.tdf Line: 29
-Info (12128): Elaborating entity "a_dpfifo_3o41" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo" File: /home/asr/Documents/GitHub/city2077/db/scfifo_ds61.tdf Line: 37
+    Info (12023): Found entity 1: a_dpfifo_3o41 File: C:/Users/eleceng/Documents/city2077/db/a_dpfifo_3o41.tdf Line: 29
+Info (12128): Elaborating entity "a_dpfifo_3o41" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo" File: C:/Users/eleceng/Documents/city2077/db/scfifo_ds61.tdf Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_c6e.tdf
-    Info (12023): Found entity 1: a_fefifo_c6e File: /home/asr/Documents/GitHub/city2077/db/a_fefifo_c6e.tdf Line: 25
-Info (12128): Elaborating entity "a_fefifo_c6e" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state" File: /home/asr/Documents/GitHub/city2077/db/a_dpfifo_3o41.tdf Line: 41
+    Info (12023): Found entity 1: a_fefifo_c6e File: C:/Users/eleceng/Documents/city2077/db/a_fefifo_c6e.tdf Line: 25
+Info (12128): Elaborating entity "a_fefifo_c6e" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state" File: C:/Users/eleceng/Documents/city2077/db/a_dpfifo_3o41.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_337.tdf
-    Info (12023): Found entity 1: cntr_337 File: /home/asr/Documents/GitHub/city2077/db/cntr_337.tdf Line: 26
-Info (12128): Elaborating entity "cntr_337" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state|cntr_337:count_usedw" File: /home/asr/Documents/GitHub/city2077/db/a_fefifo_c6e.tdf Line: 38
+    Info (12023): Found entity 1: cntr_337 File: C:/Users/eleceng/Documents/city2077/db/cntr_337.tdf Line: 26
+Info (12128): Elaborating entity "cntr_337" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state|cntr_337:count_usedw" File: C:/Users/eleceng/Documents/city2077/db/a_fefifo_c6e.tdf Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rqn1.tdf
-    Info (12023): Found entity 1: altsyncram_rqn1 File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_rqn1" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram" File: /home/asr/Documents/GitHub/city2077/db/a_dpfifo_3o41.tdf Line: 42
+    Info (12023): Found entity 1: altsyncram_rqn1 File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_rqn1" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram" File: C:/Users/eleceng/Documents/city2077/db/a_dpfifo_3o41.tdf Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_n2b.tdf
-    Info (12023): Found entity 1: cntr_n2b File: /home/asr/Documents/GitHub/city2077/db/cntr_n2b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_n2b" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|cntr_n2b:rd_ptr_count" File: /home/asr/Documents/GitHub/city2077/db/a_dpfifo_3o41.tdf Line: 43
-Info (12128): Elaborating entity "fiftyfivenm_adcblock_top_wrapper" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v Line: 152
-Info (12128): Elaborating entity "chsel_code_converter_sw_to_hw" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 173
-Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 191
-Info (12128): Elaborating entity "hello_adc_altpll" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_altpll:altpll" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 71
-Info (12128): Elaborating entity "hello_adc_altpll_stdsync_sv6" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_altpll:altpll|hello_adc_altpll_stdsync_sv6:stdsync2" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 289
-Info (12128): Elaborating entity "hello_adc_altpll_dffpipe_l2c" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_altpll:altpll|hello_adc_altpll_stdsync_sv6:stdsync2|hello_adc_altpll_dffpipe_l2c:dffpipe3" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 117
-Info (12128): Elaborating entity "hello_adc_altpll_altpll_5b92" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_altpll:altpll|hello_adc_altpll_altpll_5b92:sd1" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 295
-Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|altera_reset_controller:rst_controller" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 134
-Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v Line: 208
-Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v Line: 220
-Info (12128): Elaborating entity "sevSegxDec" for hierarchy "VGA:VGA_DISP|SYNC:C1|sevSegxDec:digit0" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 213
+    Info (12023): Found entity 1: cntr_n2b File: C:/Users/eleceng/Documents/city2077/db/cntr_n2b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_n2b" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|cntr_n2b:rd_ptr_count" File: C:/Users/eleceng/Documents/city2077/db/a_dpfifo_3o41.tdf Line: 43
+Info (12128): Elaborating entity "fiftyfivenm_adcblock_top_wrapper" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_modular_adc_control.v Line: 152
+Info (12128): Elaborating entity "chsel_code_converter_sw_to_hw" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 173
+Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 191
+Info (12128): Elaborating entity "hello_adc_altpll" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_altpll:altpll" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 71
+Info (12128): Elaborating entity "hello_adc_altpll_stdsync_sv6" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_altpll:altpll|hello_adc_altpll_stdsync_sv6:stdsync2" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 289
+Info (12128): Elaborating entity "hello_adc_altpll_dffpipe_l2c" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_altpll:altpll|hello_adc_altpll_stdsync_sv6:stdsync2|hello_adc_altpll_dffpipe_l2c:dffpipe3" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 117
+Info (12128): Elaborating entity "hello_adc_altpll_altpll_5b92" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_altpll:altpll|hello_adc_altpll_altpll_5b92:sd1" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/hello_adc_altpll.v Line: 295
+Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|altera_reset_controller:rst_controller" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/hello_adc.v Line: 134
+Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v Line: 208
+Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_controller.v Line: 220
+Info (12128): Elaborating entity "sevSegxDec" for hierarchy "VGA:VGA_DISP|SYNC:C1|sevSegxDec:digit0" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 213
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[0]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 40
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[1]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 70
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[2]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 100
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[3]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 130
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[4]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 160
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[5]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 190
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[6]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 220
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[7]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 250
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[8]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 280
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[9]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 310
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[10]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 340
-        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[11]" File: /home/asr/Documents/GitHub/city2077/db/altsyncram_rqn1.tdf Line: 370
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[0]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 40
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[1]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 70
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[2]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 100
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[3]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 130
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[4]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 160
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[5]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 190
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[6]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 220
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[7]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 250
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[8]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 280
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[9]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 310
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[10]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 340
+        Warning (14320): Synthesized away node "VGA:VGA_DISP|SYNC:C1|paddles:paddlePositions|hello_adc:qsys_u0|hello_adc_adc_control_core:adc_control_core|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[11]" File: C:/Users/eleceng/Documents/city2077/db/altsyncram_rqn1.tdf Line: 370
 Info (278001): Inferred 14 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod6" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 213
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Div2" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 214
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod7" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 214
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod8" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 215
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod9" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 216
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod10" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 217
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Div3" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 218
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod11" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 218
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|Mod0" File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 68
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod14" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 254
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod13" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 240
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod12" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 226
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod15" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 592
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|Div0" File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 67
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod6" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 213
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod6" with the following parameter: File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 213
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod6" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 213
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Div2" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 214
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod7" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 214
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod8" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 215
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod9" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 216
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod10" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 217
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Div3" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 218
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod11" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 218
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|Mod0" File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 68
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod14" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 254
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod13" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 240
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod12" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 226
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|Mod15" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 592
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|Div0" File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 67
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod6" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 213
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod6" with the following parameter: File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 213
     Info (12134): Parameter "LPM_WIDTHN" = "7"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ekl.tdf
-    Info (12023): Found entity 1: lpm_divide_ekl File: /home/asr/Documents/GitHub/city2077/db/lpm_divide_ekl.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_ekl File: C:/Users/eleceng/Documents/city2077/db/lpm_divide_ekl.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_dkh File: /home/asr/Documents/GitHub/city2077/db/sign_div_unsign_dkh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_dkh File: C:/Users/eleceng/Documents/city2077/db/sign_div_unsign_dkh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4fe.tdf
-    Info (12023): Found entity 1: alt_u_div_4fe File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_4fe.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_4fe File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_4fe.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
-    Info (12023): Found entity 1: add_sub_t3c File: /home/asr/Documents/GitHub/city2077/db/add_sub_t3c.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/eleceng/Documents/city2077/db/add_sub_t3c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
-    Info (12023): Found entity 1: add_sub_u3c File: /home/asr/Documents/GitHub/city2077/db/add_sub_u3c.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Div2" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 214
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Div2" with the following parameter: File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 214
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/eleceng/Documents/city2077/db/add_sub_u3c.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Div2" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 214
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Div2" with the following parameter: File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 214
     Info (12134): Parameter "LPM_WIDTHN" = "7"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_8sl.tdf
-    Info (12023): Found entity 1: lpm_divide_8sl File: /home/asr/Documents/GitHub/city2077/db/lpm_divide_8sl.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_8sl File: C:/Users/eleceng/Documents/city2077/db/lpm_divide_8sl.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_akh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_akh File: /home/asr/Documents/GitHub/city2077/db/sign_div_unsign_akh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_akh File: C:/Users/eleceng/Documents/city2077/db/sign_div_unsign_akh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_uee.tdf
-    Info (12023): Found entity 1: alt_u_div_uee File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_uee.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|lpm_divide:Mod0" File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 68
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|lpm_divide:Mod0" with the following parameter: File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 68
+    Info (12023): Found entity 1: alt_u_div_uee File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_uee.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|lpm_divide:Mod0" File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 68
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|lpm_divide:Mod0" with the following parameter: File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 68
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_25o.tdf
-    Info (12023): Found entity 1: lpm_divide_25o File: /home/asr/Documents/GitHub/city2077/db/lpm_divide_25o.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_25o File: C:/Users/eleceng/Documents/city2077/db/lpm_divide_25o.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_4dg.tdf
-    Info (12023): Found entity 1: abs_divider_4dg File: /home/asr/Documents/GitHub/city2077/db/abs_divider_4dg.tdf Line: 27
+    Info (12023): Found entity 1: abs_divider_4dg File: C:/Users/eleceng/Documents/city2077/db/abs_divider_4dg.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ske.tdf
-    Info (12023): Found entity 1: alt_u_div_ske File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_ske.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_ske File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_ske.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_8b9.tdf
-    Info (12023): Found entity 1: lpm_abs_8b9 File: /home/asr/Documents/GitHub/city2077/db/lpm_abs_8b9.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod14" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 254
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod14" with the following parameter: File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 254
+    Info (12023): Found entity 1: lpm_abs_8b9 File: C:/Users/eleceng/Documents/city2077/db/lpm_abs_8b9.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod14" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 254
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod14" with the following parameter: File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 254
     Info (12134): Parameter "LPM_WIDTHN" = "27"
     Info (12134): Parameter "LPM_WIDTHD" = "27"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_inl.tdf
-    Info (12023): Found entity 1: lpm_divide_inl File: /home/asr/Documents/GitHub/city2077/db/lpm_divide_inl.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_inl File: C:/Users/eleceng/Documents/city2077/db/lpm_divide_inl.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_hnh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_hnh File: /home/asr/Documents/GitHub/city2077/db/sign_div_unsign_hnh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_hnh File: C:/Users/eleceng/Documents/city2077/db/sign_div_unsign_hnh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_cle.tdf
-    Info (12023): Found entity 1: alt_u_div_cle File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_cle.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod13" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 240
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod13" with the following parameter: File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 240
+    Info (12023): Found entity 1: alt_u_div_cle File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_cle.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod13" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 240
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod13" with the following parameter: File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 240
     Info (12134): Parameter "LPM_WIDTHN" = "27"
     Info (12134): Parameter "LPM_WIDTHD" = "27"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod12" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 226
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod12" with the following parameter: File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 226
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod12" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 226
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod12" with the following parameter: File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 226
     Info (12134): Parameter "LPM_WIDTHN" = "27"
     Info (12134): Parameter "LPM_WIDTHD" = "27"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod15" File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 592
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod15" with the following parameter: File: /home/asr/Documents/GitHub/city2077/sync.vhd Line: 592
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod15" File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 592
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod15" with the following parameter: File: C:/Users/eleceng/Documents/city2077/sync.vhd Line: 592
     Info (12134): Parameter "LPM_WIDTHN" = "13"
     Info (12134): Parameter "LPM_WIDTHD" = "13"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_8nl.tdf
-    Info (12023): Found entity 1: lpm_divide_8nl File: /home/asr/Documents/GitHub/city2077/db/lpm_divide_8nl.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_8nl File: C:/Users/eleceng/Documents/city2077/db/lpm_divide_8nl.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7nh File: /home/asr/Documents/GitHub/city2077/db/sign_div_unsign_7nh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_7nh File: C:/Users/eleceng/Documents/city2077/db/sign_div_unsign_7nh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_oke.tdf
-    Info (12023): Found entity 1: alt_u_div_oke File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_oke.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|lpm_divide:Div0" File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 67
-Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|lpm_divide:Div0" with the following parameter: File: /home/asr/Documents/GitHub/city2077/txtscreen.vhd Line: 67
+    Info (12023): Found entity 1: alt_u_div_oke File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_oke.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|lpm_divide:Div0" File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 67
+Info (12133): Instantiated megafunction "VGA:VGA_DISP|SYNC:C1|txtScreen:txtscr|lpm_divide:Div0" with the following parameter: File: C:/Users/eleceng/Documents/city2077/txtscreen.vhd Line: 67
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "5"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fbo.tdf
-    Info (12023): Found entity 1: lpm_divide_fbo File: /home/asr/Documents/GitHub/city2077/db/lpm_divide_fbo.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_fbo File: C:/Users/eleceng/Documents/city2077/db/lpm_divide_fbo.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_kbg.tdf
-    Info (12023): Found entity 1: abs_divider_kbg File: /home/asr/Documents/GitHub/city2077/db/abs_divider_kbg.tdf Line: 29
+    Info (12023): Found entity 1: abs_divider_kbg File: C:/Users/eleceng/Documents/city2077/db/abs_divider_kbg.tdf Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_she.tdf
-    Info (12023): Found entity 1: alt_u_div_she File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_she.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_she File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_she.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_o99.tdf
-    Info (12023): Found entity 1: lpm_abs_o99 File: /home/asr/Documents/GitHub/city2077/db/lpm_abs_o99.tdf Line: 25
+    Info (12023): Found entity 1: lpm_abs_o99 File: C:/Users/eleceng/Documents/city2077/db/lpm_abs_o99.tdf Line: 25
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "ARDUINO_IO[7]" and its non-tri-state driver. File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[9]" and its non-tri-state driver. File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13035): Inserted always-enabled tri-state buffer between "ARDUINO_IO[7]" and its non-tri-state driver. File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[9]" and its non-tri-state driver. File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[1]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 52
-    Warning (13040): bidirectional pin "GSENSOR_SDI" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 108
-    Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 109
-    Warning (13040): bidirectional pin "ARDUINO_RESET_N" has no driver File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 115
-Info (13000): Registers with preset signals will power-up high File: /home/asr/Documents/GitHub/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v Line: 62
+    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[1]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 52
+    Warning (13040): bidirectional pin "GSENSOR_SDI" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 108
+    Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 109
+    Warning (13040): bidirectional pin "ARDUINO_RESET_N" has no driver File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 115
+Info (13000): Registers with preset signals will power-up high File: C:/Users/eleceng/Documents/city2077/quartus/hello_adc/synthesis/submodules/altera_reset_synchronizer.v Line: 62
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "ARDUINO_IO[7]~synth" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 114
-    Warning (13010): Node "GPIO[9]~synth" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13010): Node "ARDUINO_IO[7]~synth" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 114
+    Warning (13010): Node "GPIO[9]~synth" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 122
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 46
-    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 47
-    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 47
-    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 48
-    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 49
-    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 50
-    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 51
-    Warning (13410): Pin "DRAM_LDQM" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 53
-    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 54
-    Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 55
-    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 56
-    Warning (13410): Pin "HEX2[7]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 67
-    Warning (13410): Pin "HEX3[7]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 70
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 86
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 86
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 86
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 86
-    Warning (13410): Pin "GSENSOR_CS_N" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 105
-    Warning (13410): Pin "GSENSOR_SCLK" is stuck at GND File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 107
+    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 46
+    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 47
+    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 47
+    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 48
+    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 49
+    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 50
+    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 51
+    Warning (13410): Pin "DRAM_LDQM" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 53
+    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 54
+    Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 55
+    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 56
+    Warning (13410): Pin "HEX2[7]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 67
+    Warning (13410): Pin "HEX3[7]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 70
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 86
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 86
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 86
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 86
+    Warning (13410): Pin "GSENSOR_CS_N" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 105
+    Warning (13410): Pin "GSENSOR_SCLK" is stuck at GND File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 107
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 56 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod7|lpm_divide_ekl:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_4fe:divider|add_sub_6_result_int[0]~0" File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_4fe.tdf Line: 57
-    Info (17048): Logic cell "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod11|lpm_divide_ekl:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_4fe:divider|add_sub_6_result_int[0]~0" File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_4fe.tdf Line: 57
-    Info (17048): Logic cell "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod15|lpm_divide_8nl:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_oke:divider|add_sub_12_result_int[0]~26" File: /home/asr/Documents/GitHub/city2077/db/alt_u_div_oke.tdf Line: 47
-Info (144001): Generated suppressed messages file /home/asr/Documents/GitHub/city2077/output_files/vga.map.smsg
+    Info (17048): Logic cell "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod7|lpm_divide_ekl:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_4fe:divider|add_sub_6_result_int[0]~0" File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_4fe.tdf Line: 57
+    Info (17048): Logic cell "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod11|lpm_divide_ekl:auto_generated|sign_div_unsign_dkh:divider|alt_u_div_4fe:divider|add_sub_6_result_int[0]~0" File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_4fe.tdf Line: 57
+    Info (17048): Logic cell "VGA:VGA_DISP|SYNC:C1|lpm_divide:Mod15|lpm_divide_8nl:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_oke:divider|add_sub_12_result_int[0]~26" File: C:/Users/eleceng/Documents/city2077/db/alt_u_div_oke.tdf Line: 47
+Info (144001): Generated suppressed messages file C:/Users/eleceng/Documents/city2077/output_files/vga.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 2 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ADC_CLK_10" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 33
-    Warning (15610): No output dependent on input pin "MAX10_CLK2_50" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 41
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 81
-    Warning (15610): No output dependent on input pin "SW[0]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "SW[1]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "SW[3]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "SW[4]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "SW[5]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "GSENSOR_INT[1]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 106
-    Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: /home/asr/Documents/GitHub/city2077/DE10_LITE_Golden_Top.v Line: 106
+    Warning (15610): No output dependent on input pin "ADC_CLK_10" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 33
+    Warning (15610): No output dependent on input pin "MAX10_CLK2_50" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 41
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 81
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 91
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 91
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 91
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 91
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 91
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 91
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 91
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 91
+    Warning (15610): No output dependent on input pin "GSENSOR_INT[1]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 106
+    Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: C:/Users/eleceng/Documents/city2077/DE10_LITE_Golden_Top.v Line: 106
 Info (21057): Implemented 4510 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 97 output pins
@@ -2788,16 +2744,16 @@ Info (21057): Implemented 4510 device resources after synthesis - the final reso
     Info (21061): Implemented 4306 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 175 warnings
-    Info: Peak virtual memory: 486 megabytes
-    Info: Processing ended: Wed Nov 23 12:12:46 2022
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 173 warnings
+    Info: Peak virtual memory: 4871 megabytes
+    Info: Processing ended: Wed Nov 23 19:32:30 2022
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in /home/asr/Documents/GitHub/city2077/output_files/vga.map.smsg.
+The suppressed messages can be found in C:/Users/eleceng/Documents/city2077/output_files/vga.map.smsg.
 
 
